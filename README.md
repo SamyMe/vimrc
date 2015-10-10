@@ -1,6 +1,6 @@
 ###My .vimrc
 
-Before copying the vimrc, some packages and plugins need to be installed:
+Before copying the vimrc, some packages and plugins need to be installed, which you can do by executing the **copy.sh** script.
 
 Installing **vimx** for system clipboard handling
 ```bash
