@@ -1,6 +1,6 @@
-Here is my .vimrc:
+###Here is my .vimrc:
 
-'''vimrc
+```bash
 " Change windows files ’ to '  
 command Chthem :%s/’/'/g
 
@@ -38,4 +38,4 @@ call pathogen#infect()
 set clipboard=unnamedplus
 " If clipboard=unnamedplus doesn't work 
 " vmap "*y <Leader>y
-'''
+```
