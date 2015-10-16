@@ -15,6 +15,9 @@ vnoremap > >gv
 let mapleader = ";"
 vnoremap <Leader>s :sort<CR> 
 
+" Press Space to turn off highlighting and clear any message already displayed.
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 " Set line numbers
 set number
 
