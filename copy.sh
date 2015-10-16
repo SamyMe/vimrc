@@ -1,6 +1,6 @@
 # Copy vimrc into home and make a copy of the old one
 cp ~/.vimrc ~/.OLD-vimrc
-cp .vimrc ~/.vimrc 
+cp vimrc ~/.vimrc 
 
 # Installing vimx for system clipboard handling
 sudo dnf install vim-X11
