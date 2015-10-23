@@ -41,8 +41,20 @@ set completeopt-=preview
 " pathogene manage plugins
 call pathogen#infect()
 
+
+" Simplify multiple register copy
+vmap ay "ay
+vmap zy "zy
+vmap ey "ey
+" Simplify multiple register past
+map ap "ap
+map zp "zp
+map ep "ep
+
 " NOT WORKING Use system clipboard
 set clipboard=unnamedplus
 " If clipboard=unnamedplus doesn't work 
 " vmap "*y <Leader>y
+
+
 
