@@ -56,5 +56,5 @@ set clipboard=unnamedplus
 " If clipboard=unnamedplus doesn't work 
 " vmap "*y <Leader>y
 
-
+syntax on
 
