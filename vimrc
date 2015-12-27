@@ -47,9 +47,11 @@ vmap ay "ay
 vmap zy "zy
 vmap ey "ey
 
-" Simple Comment
+" Simple Comment/Uncomment
 vmap ;c :'<,'>s/^/# /<CR><Space>
 map ;c :s/^/# /<CR><Space>
+vmap ;u :'<,'>s/^# //<CR><Space>
+map ;u :s/^# //<CR><Space>
 
 " Simplify multiple register past
 map ap "ap
