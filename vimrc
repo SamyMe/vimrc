@@ -22,7 +22,7 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set number
 
 " Python folding
-set nofoldenable
+set foldenable
 
 " About Indents
 set autoindent
@@ -46,6 +46,11 @@ call pathogen#infect()
 vmap ay "ay
 vmap zy "zy
 vmap ey "ey
+
+" Simple Comment
+vmap ;c :'<,'>s/^/# /<CR><Space>
+map ;c :s/^/# /<CR><Space>
+
 " Simplify multiple register past
 map ap "ap
 map zp "zp
@@ -56,5 +61,5 @@ set clipboard=unnamedplus
 " If clipboard=unnamedplus doesn't work 
 " vmap "*y <Leader>y
 
-syntax on
+
 
