@@ -50,8 +50,8 @@ vmap ey "ey
 " Simple Comment/Uncomment
 vmap ;c :'<,'>s/^/# /<CR><Space>
 map ;c :s/^/# /<CR><Space>
-vmap ;u :'<,'>s/^# //<CR><Space>
-map ;u :s/^# //<CR><Space>
+vmap ;u :'<,'>s/^\(\s\)*# /\1/<CR><Space>
+map ;u :s/^\(\s*\)# /\1/<CR><Space>
 
 " Simplify multiple register past
 map ap "ap
