@@ -48,8 +48,8 @@ vmap zy "zy
 vmap ey "ey
 
 " Simple Comment/Uncomment
-vmap ;c :'<,'>s/^/# /<CR><Space>
-map ;c :s/^/# /<CR><Space>
+vmap ;c :'<,'>s/^\(\s*\)/\1# /<CR><Space>
+map ;c :s/^\(\s*\)/\1# /<CR><Space>
 vmap ;u :'<,'>s/^\(\s\)*# /\1/<CR><Space>
 map ;u :s/^\(\s*\)# /\1/<CR><Space>
 
