@@ -3,8 +3,12 @@ cp ~/.vimrc ~/.OLD-vimrc
 cp vimrc ~/.vimrc 
 
 # Installing vimx for system clipboard handling
-sudo dnf install vim-X11
-echo "alias vi='vimx'" > ~/.bashrc
+
+#if system=Fedora
+sudo dnf install vim-X11 && echo "alias vi='vimx'" > ~/.bashrc
+#if system=Ubuntu
+sudo apt-get install vim-gtk && echo "alias vi='vim.gtk'" > ~/.bashrc
+
 source ~/.bashrc
 
 # Installing pathogen for better scripts handling
