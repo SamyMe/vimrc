@@ -20,3 +20,7 @@ Installing **python-mode** plugin:
 cd ~/.vim/bundle
 git clone https://github.com/klen/python-mode
 ```
+
+Interesting links to check:
+
+[VIM and Python - a Match Made in Heaven](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/#.V1rCrYQnlFs.hackernews)
