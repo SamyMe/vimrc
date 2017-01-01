@@ -5,7 +5,7 @@ Before copying the vimrc, some packages and plugins need to be installed, which 
 Installing **vimx** for system clipboard handling
 ```bash
 sudo dnf install vim-X11
-echo "alias vi='vimx'" > ~/.bashrc
+echo "alias vi='vimx'" >> ~/.bashrc
 source ~/.bashrc
 ```
 
