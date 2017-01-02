@@ -5,9 +5,9 @@ cp vimrc ~/.vimrc
 # Installing vimx for system clipboard handling
 
 #if system=Fedora
-sudo dnf install vim-X11 && echo "alias vi='vimx'" > ~/.bashrc
+sudo dnf install vim-X11 && echo "alias vi='vimx'" >> ~/.bashrc
 #if system=Ubuntu
-sudo apt-get install vim-gtk && echo "alias vi='vim.gtk'" > ~/.bashrc
+sudo apt-get install vim-gtk && echo "alias vi='vim.gtk'" >> ~/.bashrc
 
 source ~/.bashrc
 
