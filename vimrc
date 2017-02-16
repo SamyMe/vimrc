@@ -1,3 +1,30 @@
+set nocompatible              " required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
+
+Bundle 'Valloric/YouCompleteMe'
+
+
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
+set encoding=utf-8
+
 " Change windows files ’ to '  
 command Chthem :%s/’/'/g
 
@@ -21,8 +48,11 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 " Set line numbers
 set number
 
-" Python folding
-set foldenable
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+" Enable folding with the spacebar
+nnoremap <space> za
 
 " About Indents
 set autoindent
@@ -39,7 +69,7 @@ let g:pymode_options_colorcolumn=0
 set completeopt-=preview
 
 " pathogene manage plugins
-call pathogen#infect()
+" call pathogen#infect()
 
 
 " Simplify multiple register copy
@@ -64,4 +94,9 @@ set clipboard=unnamedplus
 " vmap "*y <Leader>y
 
 
+" add YouCompleteMe plugin 
+" https://github.com/Valloric/YouCompleteMe
 
+
+" Good Ref Articles
+" https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/
