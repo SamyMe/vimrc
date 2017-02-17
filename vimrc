@@ -13,8 +13,9 @@ Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
-Bundle 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 
+Plugin 'kien/ctrlp.vim'
 
 
 
@@ -87,6 +88,11 @@ map ;u :s/^\(\s*\)# /\1/<CR><Space>
 map ap "ap
 map zp "zp
 map ep "ep
+
+
+" Tabs navigation
+nnoremap <A-Left> :tabprevious<CR>
+nnoremap <A-Right> :tabnext<CR>
 
 " NOT WORKING Use system clipboard
 set clipboard=unnamedplus
