@@ -100,9 +100,6 @@ set clipboard=unnamedplus
 " vmap "*y <Leader>y
 
 
-" add YouCompleteMe plugin 
-" https://github.com/Valloric/YouCompleteMe
-
-
-" Good Ref Articles
+" Interesting links
 " https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/
+" http://vimawesome.com/plugin/nerdtree-red
