@@ -9,10 +9,15 @@ echo "alias vi='vimx'" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-Installing **pathogen** for better scripts handling:
+Installing **Vundle** for better scripts handling:
 ```bash
 mkdir -p ~/.vim/autoload ~/.vim/bundle
-curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+Inside vim do a: 
+```
+:PluginInstall
 ```
 
 Installing **python-mode** plugin:

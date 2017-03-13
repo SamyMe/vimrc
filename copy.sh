@@ -13,8 +13,8 @@ source ~/.bashrc
 
 # Installing pathogen for better scripts handling
 mkdir -p ~/.vim/autoload ~/.vim/bundle
-curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Installing python-mode plugin
-cd ~/.vim/bundle
-git clone https://github.com/klen/python-mode
+# cd ~/.vim/bundle
+# git clone https://github.com/klen/python-mode
