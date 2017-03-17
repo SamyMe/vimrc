@@ -17,8 +17,6 @@ Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'kien/ctrlp.vim'
 
-
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -53,7 +51,8 @@ set number
 set foldmethod=indent
 set foldlevel=99
 " Enable folding with the spacebar
-nnoremap <space> za
+nnoremap f za
+nnoremap F zM
 
 " About Indents
 set autoindent
@@ -79,10 +78,10 @@ vmap zy "zy
 vmap ey "ey
 
 " Simple Comment/Uncomment
-vmap ;c :'<,'>s/^\(\s*\)/\1# /<CR><Space>
-map ;c :s/^\(\s*\)/\1# /<CR><Space>
-vmap ;u :'<,'>s/^\(\s\)*# /\1/<CR><Space>
-map ;u :s/^\(\s*\)# /\1/<CR><Space>
+vmap ;c :'<,'>s/^\(\s*\)/\1# /<CR>
+map ;c :s/^\(\s*\)/\1# /<CR>
+vmap ;u :'<,'>s/^\(\s\)*# /\1/<CR>
+map ;u :s/^\(\s*\)# /\1/<CR>
 
 " Simplify multiple register past
 map ap "ap
@@ -103,3 +102,8 @@ set clipboard=unnamedplus
 " Interesting links
 " https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/
 " http://vimawesome.com/plugin/nerdtree-red
+
+" Insert TODO block
+map todo o# ------  TODO:  -------<ENTER>#  <ENTER>#  <ENTER># ---------------------- <ESC>
+" Insert Warning /!\
+map ! i/!\<ESC>
